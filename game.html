@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>狙击外星人 - 游戏</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hud">
+    <div>剩余时间：<span id="timer">60</span>s</div>
+    <div>剩余外星人：<span id="aliens-left">20</span></div>
+    <div>当前积分：<span id="score">0</span></div>
+  </div>
+  <div id="game-area"></div>
+  <button id="back-home">返回主页</button>
+  <div id="scope-overlay"></div>
+  <img id="crosshair" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><circle cx='30' cy='30' r='28' fill='none' stroke='white' stroke-width='2'/><line x1='30' y1='0' x2='30' y2='12' stroke='white' stroke-width='2'/><line x1='30' y1='48' x2='30' y2='60' stroke='white' stroke-width='2'/><line x1='0' y1='30' x2='12' y2='30' stroke='white' stroke-width='2'/><line x1='48' y1='30' x2='60' y2='30' stroke='white' stroke-width='2'/><circle cx='30' cy='30' r='2' fill='white'/></svg>" alt="crosshair" draggable="false" />
+  <script src="game.js"></script>
+</body>
+</html>

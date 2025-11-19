@@ -10,7 +10,7 @@
 一个使用原生 HTML、CSS、JavaScript 开发的简单射击练习游戏。
 无任何框架或游戏引擎依赖，纯粹的前端基础练习项目。
 
-[👀 在线预览 (Demo)](https://your-username.github.io/Project-Sniping-Aliens/)
+[👀 在线预览 (Demo)](https://houtx.github.io/Project-Sniping-Aliens/)
 
 </div>
 

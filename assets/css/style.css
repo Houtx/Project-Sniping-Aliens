@@ -38,7 +38,7 @@ button {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: url('level.png');
+  background-image: url('../images/level.png');
   background-size: cover;
   background-position: center;
   cursor: none;

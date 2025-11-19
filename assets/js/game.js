@@ -18,7 +18,7 @@ function initIndex() {
   el.textContent = raw ? String(raw) : "0";
   const btn = $("start-game");
   btn.addEventListener("click", () => {
-    location.href = "game.html";
+    location.href = "pages/game.html";
   });
 }
 
@@ -55,7 +55,7 @@ function spawnWave() {
   for (let i = 0; i < count; i++) {
     const img = document.createElement("img");
     img.className = "alien";
-    img.src = "alien.png";
+    img.src = "../assets/images/alien.png";
     img.alt = "alien";
     img.draggable = false;
     const x = Math.floor(Math.random() * Math.max(1, rect.width - 30));
@@ -127,7 +127,7 @@ function onWin() {
     const raw = localStorage.getItem("highScore");
     const hs = raw ? Number(raw) : 0;
     if (currentScore > hs) localStorage.setItem("highScore", String(currentScore));
-    location.href = "index.html";
+    location.href = "../index.html";
   }
 }
 
@@ -142,7 +142,7 @@ function onFail() {
   stopTimer();
   alert("时间到！游戏失败！");
   saveHighScore();
-  location.href = "index.html";
+  location.href = "../index.html";
 }
 
 function bindGameEvents() {
@@ -185,13 +185,13 @@ function bindGameEvents() {
       updateHUD();
     }
   });
-  
+
   const back = $("back-home");
   if (back) {
     back.addEventListener("click", () => {
       stopWaveTimer();
       saveHighScore();
-      location.href = "index.html";
+      location.href = "../index.html";
     });
   }
 }
